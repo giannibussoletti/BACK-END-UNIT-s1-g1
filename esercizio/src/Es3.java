@@ -25,6 +25,6 @@ public class Es3 {
         System.out.println("Altezza");
         int altezzaTri = scanner.nextInt();
         int areaTri = (base*altezzaTri)/2;
-        System.out.println("L'area del triangolo è di:"+areaTri+"cm");
+        System.out.println("L'area del triangolo è di:" + areaTri + "cm");
     }
 }

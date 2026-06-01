@@ -7,26 +7,25 @@ public class Es1 {
     }
 
     public static String stringInt(String phrase, int num) {
-        String numToStr = Integer.toString(num);
-        return phrase + numToStr;
+        return phrase + num;
     }
 
-
-    public static void main(String[] args) {
-        String[] firstArray = {"Gianni", "Franco", "Germano", "Michele", "Luigi"};
-        String addedString = "Mario";
+    public static String[] inserisciInArray(String[] firstArray, String newWord) {
         String[] newArray = new String[6];
 
         newArray[0] = firstArray[0];
         newArray[1] = firstArray[1];
-        newArray[2] = addedString;
+        newArray[2] = newWord;
         newArray[3] = firstArray[2];
         newArray[4] = firstArray[3];
         newArray[5] = firstArray[4];
-String consoleOldArray = Arrays.toString(firstArray);
-String consoleNewArray = Arrays.toString(newArray);
-        System.out.println(consoleOldArray);
-        System.out.println(consoleNewArray);
+        return newArray;
+    }
+
+    public static void main(String[] args) {
+        String[] firstArray = {"Gianni", "Franco", "Germano", "Michele", "Luigi"};
+        String[] result = inserisciInArray(firstArray, "Mario");
+        System.out.println(Arrays.toString(result));
 
     }
 
