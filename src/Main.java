@@ -1,13 +1,11 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println("Hello and welcome!");
+public class Main {
+    // Le classi è bene denominarle con le lettere maiuscole
+    // La classe deve essere chiamata esattamente come il nome del file
+    public static void main(String[] args){
+        // con il metodo main bisogna avere una classe principale, quindi andremo a creare la classe main
+        System.out.println("Hello World");  // Shortcut -< sout
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+        final double DICHIARAZIONE_CONSTANTE = 10.4; // con la parola final si definisce una costante in Java, e si usa lo snake case tutto in maiuscolo
+
     }
 }
